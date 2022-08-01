@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+}
+
+body {
+  background: url("../img/background.jpg") no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+.main-box {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.key-box {
+  width: 70px;
+  height: 66px;
+  padding: 10px 5px;
+  border: 4px solid black;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.key {
+  display: block;
+  font-size: 40px;
+  color: white;
+  transition: all .07s ease;
+}
+
+.sound {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #ffc600;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
+
